@@ -1,13 +1,15 @@
+import flask
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name__)
-
-
-@app.route('/hello')
-def hello():
-    return '<h1>Hello world<h1>'
+app = Flask(__name__, template_folder='.')
 
 
 @app.route('/')
-def index():
-    return 'C://Users//sourc//PycharmProjects//toDoList//template.html'
+def reg():
+    return flask.render_template('templates/reg.html')
+
+
+@app.route('/template')
+def temp():
+    return flask.render_template('templates/template.html')

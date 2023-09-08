@@ -1,0 +1,61 @@
+.modal {
+    display: none;
+    position: fixed;
+    border: 2px solid black;
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 70%;
+}
+
+.modal-content {
+    text-align: center; /* Выравнивание по центру по горизонтали */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание по центру по вертикали */
+    justify-content: center; /* Выравнивание по центру по вертикали */
+    height: 100%; 
+}
+
+.reg_logo {
+    display: inline-flex;
+    justify-content: left;
+    width: auto;
+    height: auto;
+}
+
+.reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.reg_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    margin-top: 50px;
+    padding-top: 30px;
+}
+
+.reg_logo:hover {
+    cursor: pointer;
+}
+
+.reg_title {
+    padding-left: 10px;
+}
+
+button {
+    margin: 40px !important;
+}
+
+body {
+    background-image: url('https://images2.alphacoders.com/470/thumb-1920-470127.jpg');
+}

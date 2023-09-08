@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="static/style.css">
     <title>ToDo List</title>
 </head>
 <body>
     <button id="addTask">Add task</button>
-
 
     <div class="modal">
         <div class="modal-content">
@@ -15,6 +14,7 @@
             <button id="closeModalBtn">Закрыть окно</button>
         </div>
     </div>
-    <script src="script.js"></script>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

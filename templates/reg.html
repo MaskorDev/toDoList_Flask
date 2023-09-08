@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Registration</title>
+</head>
+<body>
+
+    <div class="reg_logo">
+        <img src=" {{ url_for('static', filename='icons8-todo-list-50.png') }} " alt="logo"/>
+        <h3 class="reg_title">ToDoList</h3>
+    </div>
+
+    <div class="reg">
+        <div class="reg_content">
+            <h1 class="reg_header" style="color: white; -webkit-text-stroke: 1px;
+            -webkit-text-stroke-color: black; font-size: 48px;">
+            Ваш лучший планировщик: Добро пожаловать на ToDoList!</h1>
+           
+            <button id="reg_signUp" class="btn btn-primary btn-lg">Начать планировать !</button>
+            <button id="reg_signIn" class="btn btn-outline-secondary">У меня уже есть аккаунт</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
